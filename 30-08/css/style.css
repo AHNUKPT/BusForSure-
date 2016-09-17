@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "League Gothic";
+    src: url("font1/League_Gothic-webfont.woff");
+    format("truetype");
+}
+
+@font-face {
+    font-family: "DroidSansBold";
+    src: url("font1/DroidSans-Bold-webfont.woff");
+    format("truetype");
+}
+
+ body{
+     background-image:url('style_img/back.png');
+     background-color: #444;
+     background: url('style_img/pinlayer1.png'),url('style_img/pinlayer2.png'),url('style_img/back.png');  
+     background-position: 51px 34px, 27px 50%;
+}
+.vertical-offset-100{
+   /*Improvised by:- HIMANSHU SHEKHAR.*/
+    padding-top:20px;
+    /*****/
+}
+footer{
+    
+    padding-top: 100px;
+}
+#display{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+}
+#locationBox{
+    height: 360px;
+    color: white;
+    background: grey;
+}
+#begin{
+    position:relative;
+    top: 50%;
+    left: 45%;
+    width:36em;
+    height:30em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+}
+#bus_loc_holder{
+    top: 10%;
+}
+
+/*Improvised by:- HIMANSHU SHEKHAR.*/
+
+/*
+ #blocks {
+     display: block;
+	 margin:auto;
+	 width:100%;
+ }
+ */
+
+ #script {
+     display: inline;
+     color: #ffffff;
+     text-align: center;
+     text-shadow: 1px 1px 1px #fff;
+     padding-top: 1%;
+     font-family: "League Gothic",Arial,sans-serif;
+ }
+
+ #icon {
+     
+     display: inline;
+     height: 80px;
+	 width: 5%;
+	 float: right;
+ }
+
+ .headbox {
+     float: left;
+     width: 100%;
+     height: 80px;
+     display: inline;
+     background: #d7163c;
+ }
+
+
+#primary-head{
+	margin: auto;
+	background: #d7163c;
+}
+/*
+.headbox {
+     float: right;
+     height: 80px;
+     display: inline;
+     background: #d7163c;
+ }
+ #icon {
+     float: right;
+     display: inline;
+     width: 5%;
+     height: 6%;
+ }
+ */
+ #primary-foot{
+     /*width:100%;*/
+ }
+
+ #primary-foot p{
+     color: #ffffff;
+     text-shadow: 1px 1px 1px #fff;
+     text-align: center;
+     background: #d7163c;
+     padding-bottom: 1.7%;
+ }
+
+ .msgBox{
+     padding-top: 8%;
+ }
+
+ #msg h4{
+     text-align: center;
+     color: #ffffff;
+     opacity: 1;
+ }
+
+ #msg h5{
+     text-align: center;
+     color: #ffffff;
+     padding-top: 8%;
+     text-decoration: underline;
+ }
+
+ #msg span{
+    font-family: "League Gothic",Arial,sans-serif;
+    font-size: larger;
+ }
+
+ #FORM{
+	width: 290px;
+    height: 240px;
+    display: inline;
+    background: #FAFAF6;
+    border: 5px solid #E9E9E4;
+    display: block;
+	margin: auto;
+	-webkit-border-bottom-left-radius:15px;
+	 -moz-border-radius-bottomleft: 15px;
+	 border-bottom-left-radius: 15px;
+	 -webkit-border-top-right-radius:15px;
+	 -moz-border-radius-topright: 15px;
+	 border-top-right-radius: 15px;
+}
+ 
+ #myForm fieldset{
+	 margin: 10px 0 10px 10px;
+ }
+ 
+ #myForm label{
+	 display:block;
+	 font: bold 14px "DroidSansBold", Verdana, sans-serif;
+	 line-height: 1.5em;
+	 color:#0000b3;
+	 margin-top: 5px;
+ }
+ .formIn{
+	 display:block;
+	 -webkit-border-top-left-radius:15px;
+	 -moz-border-radius-topleft: 15px;
+	 border-top-left-radius: 15px;
+	 -webkit-border-bottom-right-radius:15px;
+	 -moz-border-radius-bottomright: 15px;
+	 border-bottom-right-radius: 15px;
+ }
+
+ #myForm button{
+	 float: left;
+	 padding: 8px 15px;
+	 margin-top: 5px;
+	 font: bold 12px "DroidSansBold", Verdana, sans-serif;
+	 line-height:1;
+	 color: #ffffff;
+	 border: none;
+	 background-color: #d7163c;
+	 cursor: pointer;
+	 -webkit-border-top-left-radius:15px;
+	 -moz-border-radius-topleft: 15px;
+	 border-top-left-radius: 15px;
+	-webkit-border-bottom-right-radius:15px;
+	 -moz-border-radius-bottomright: 15px;
+	 border-bottom-right-radius: 15px;
+	 }
+	 
+#myForm button:hover{
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	text-shadow: 1px 1px 1px #fff;
+	
+}
+	 
+#myForm fieldset input{
+	width: 250px;
+	padding: 8px 8px;
+	font-size: 12px;
+	font-weight: bold;
+	font-style:italic;
+	color:#d7163c;
+	border: 1px solid #e5e5dd;
+	background:#e5e5ff;
+	-webkit-border-top-left-radius:15px;
+	-moz-border-radius-topleft: 15px;
+	border-top-left-radius: 15px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomright: 15px;
+	border-bottom-right-radius: 15px;
+}
+	
+#myForm fieldset select{
+	width: 250px;
+	padding: 8px 8px;
+	font-size: 12px;
+	font-weight: bold;
+	font-style:italic;
+	color:#d7163c;
+	border: 1px solid #e5e5dd;
+	background:#e5e5ff;
+	-webkit-border-top-left-radius:15px;
+	-moz-border-radius-topleft: 15px;
+	border-top-left-radius: 15px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomright: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.formbox_setroute{
+	width: 290px;
+    height: 140px;
+    display: inline;
+    background: #FAFAF6;
+    border: 5px solid #E9E9E4;
+    display: block;
+	margin: auto;
+	-webkit-border-bottom-left-radius:15px;
+	 -moz-border-radius-bottomleft: 15px;
+	 border-bottom-left-radius: 15px;
+	 -webkit-border-top-right-radius:15px;
+	 -moz-border-radius-topright: 15px;
+	 border-top-right-radius: 15px;
+
+}	
+
+#busNo{
+	margin: auto;
+	margin: .3cm 0cm .3cm 0cm;
+	text-align: center;
+	color:#d7163c
+}
+
+
+/*
+NOTE:- THIS STYLESHEET ALSO CONTAINS SOME STYLING FOR OTHER PAGES(EX-SETROUTE.HTML), FOR THE TIME BEING. SO BE CAREFUL WHILE READING 
+AND IF YOU DON'T UNDERSTAND ANYTHING, PLEASE DON'T DELETE IT.
+*/
+
+ /*****/
