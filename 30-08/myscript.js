@@ -1,4 +1,4 @@
-<script>
+$(document).ready(function(){
 
   var x;
 
@@ -42,4 +42,4 @@
 
   }
 
-</script>
+});
