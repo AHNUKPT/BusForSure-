@@ -1,105 +1,66 @@
-
 <!DOCTYPE html>
+
 <html>
+	
 <head>
+	
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	
-
-	<script type="text/javascript" src="my_script.js"></script>
-
-    <div id="blocks">
-        
-
-		<section id="script" class="headbox">
-            <header><h1>Bus For Sure!</h1> </header>
-        </section>
-		
-
-    </div>
+    <script src="myscript.js"></script>
 
 </head>
-
-<section id="msg" class="msgBox">
-
-    <h4>Say NO to <br><b><span>BUS ENQUIRY HARRASMENT</span></b>.</h4>
-
-    <h5> <b>FIND YOUR BUS IN THE BLINK OF AN EYE.</b></h5>
-</section>
 
 
 <body>
 
-			
-				<section class="formbox_setroute">
-                        <form id="myForm">
+	<div id="blocks">
+        	<section id="script" class="headbox">
+            		<header><h1>Bus For Sure!</h1> </header>
+        	</section>
+        </div>
+	
+	<section id="msg" class="msgBox">
+		<h4>Say NO to <br><b><span>BUS ENQUIRY HARRASMENT</span></b>.</h4>
+		<h5> <b>FIND YOUR BUS IN THE BLINK OF AN EYE.</b></h5>
+	</section>
+		
+	<section class="formbox_setroute">
+		
+                <form id="myForm">
 
-                        <br/>
+                	<br/>
 						
-						<fieldset>
+			<fieldset>
 						
                         <select id="select" class="form-control">
-                            <option selected>SELECT BUS ROUTE</option>
-							<option value="1">JK_ROAD</option>
-							<option value="2">NIZAMMUDIN</option>
-							<option value="3">KOLAR</option>
-							<option value="4">AYODHYA_BYPASS</option>
+                        	<option selected>SELECT BUS ROUTE</option>
+				<option value="1">JK_ROAD</option>
+				<option value="2">NIZAMMUDIN</option>
+				<option value="3">KOLAR</option>
+				<option value="4">AYODHYA_BYPASS</option>
                         </select>
-                            <br>
-                            <h3 id="busNo"></h3>
+                        
+                        <br>
+                        
+                        <h3 id="busNo"></h3>
 
-
-                            <script>
-                                var x;
-
-                                var db = openDatabase('route', '1.0', 'Test DB', 2 * 1024 * 1024);
-
-                                db.transaction(function (tx) {
-                                    tx.executeSql('CREATE TABLE IF NOT EXISTS buses (busroute unique, busno)');
-                                    tx.executeSql('INSERT INTO buses (busroute, busno) VALUES (1, "5586")');
-                                    tx.executeSql('INSERT INTO buses (busroute, busno) VALUES (2, "4158")');
-                                });
-
-                                select=document.getElementById("select");
-
-                                select.onchange=function(){
-
-                                    x = this.value;
-
-                                    db.transaction(function (tx) {
-                                        tx.executeSql('SELECT * FROM buses',[], function (tx,results) {
-                                            var len = results.rows.length, i;
-
-                                            for(i=0;i<len;i++){
-                                                if(x==results.rows.item(i).busroute){
-
-                                                    var y=results.rows.item(i).busno;
-
-                                                    document.getElementById("busNo").innerHTML=y;
-
-                                                }
-                                            }
-
-                                        });
-                                    });
-
-                                }
-
-                            </script>
-
-						</fieldset>
-                            </form>
-				</section>
+			</fieldset>
+			
+                </form>
+				
+	</section>
           
-</div>
 
-<footer id="primary-foot">
-    <section>
-        <p>Powered by: <b>4Ms</b>.</p>
-    </section>
-</footer>
+	<footer id="primary-foot">
+    		<section>
+        		<p>Powered by: <b>4Ms</b>.</p>
+    		</section>
+	</footer>
 
 </body>
+
 </html>
