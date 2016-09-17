@@ -32,8 +32,8 @@ $(document).ready(function(){
           if(x==results.rows.item(i).busroute){
             var y=results.rows.item(i).busno;
             document.getElementById("busNo").innerHTML=y;
-            
           }
+            
         }
 
       });
